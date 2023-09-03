@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="keyhunt.css">
+		<title>another lost soul has come here</title>
+	</head>
+
+	<meta content="Key Hunt Guide (v1.2)" property="og:title" />
+	<meta content="another lost soul has come here" property="og:description" />
+	<meta content="https://westcraft15.github.io/keyhunt/keyhunt" property="og:url" />
+	<meta content="https://westcraft15.github.io/keyhunt/assets/Purouy.png" property="og:image" />
+	<meta content="#D8A030" data-react-helmet="true" name="theme-color" />
+
+	<script>
+		const head = document.getElementsByTagName("head")[0];
+		const names = ["Grouy", "Greouy", "Bluouy", "Reouy", "Purouy", "Blaouy", "Lenny", "Gouy", "Piouy", "Oraouy"]
+
+		const favicon = document.createElement("link")
+		favicon.setAttribute("rel", "icon")
+		favicon.setAttribute("type", "image/x-icon")
+		favicon.setAttribute("href", "assets/" + names[Math.floor(Math.random() * names.length)] + ".png")
+		head.appendChild(favicon)
+	</script>
+
+	<body style="text-align: center;">
+		<ul class="navBar">
+			<li><a href="javascript:void(0)" class="current">Landing page</a></li>
+			<li><a href="guide">Keys</a></li>
+			<li><a href="help">Help</a></li>
+			<li><a href="other">Other Stuff</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)">Version</a>
+				<div class="dropdown-content">
+					<a href="javascript:void(0)" class="current">1.2</a>
+					<a href="keyhunt-1.1">1.1</a>
+					<a href="keyhunt-af23">April Fools</a>
+					<a href="guide-2.0">2.0</a>
+				</div>
+			</li>
+		</ul>
+		
+		<div style="padding:20px; margin-top:20px;">
+			<h1>Scoutdigo Key Hunt Guide</h1>
+			<h2>Why?</h2>
+			<p>To put it simply: I got tired of repeating myself.</p>
+			<h1 style="margin-top: 128px; color: red">Read this. Seriously.</h1>
+			<p>You will probably have issues, and that's okay!</p>
+			<p>Struggling is part of the learning process.</p>
+			<p>However, to expedite that process I have included a help section, found <a href="help">here</a>.</p>
+			<p>Please, <span class="important">please</span> read it before asking questions. The answer is probably there.</p>
+			<p style="margin-top: 64px; font-size: 12px;">Notice: WestCraft15 reserves the right to yell at you if you ask a dumb question.<br>A dumb question is defined as "anything which has already been answered in the help section."</p>
+		</div>
+    </body>
+</html>
