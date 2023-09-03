@@ -1,0 +1,144 @@
+body {
+	background: #000000 url("assets/bg_omori.png") repeat left top;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin-left: 0;
+}
+
+.crustavo {
+	width: 128px;
+	height: 100px;
+}
+
+.crustavo:hover .crustavo2 {
+	display: none;
+}
+
+.crustavo .crustavo3 {
+	display: none;
+	margin-top: -8px;
+}
+
+.crustavo:hover .crustavo3 {
+	display: inline;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+p {
+	font-size: 125%;
+}
+
+ul {
+	text-align: left;
+	font-size: 18px;
+}
+
+ol {
+	text-align: left;
+	font-size: 16px;
+}
+
+li {
+	font-size: 125%;
+	margin-top: 16px;
+}
+
+.important {
+	color: red;
+	font-weight: 600;
+	font-size: 140%;
+	font-style: italic;
+}
+
+a {
+	transition-duration: 0.1s;
+}
+
+a:link {
+	color: lightskyblue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: dodgerblue;
+}
+
+a:active {
+	color: blue;
+}
+
+ul.navBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: fixed;	
+	top: 0;
+	width: 100%;
+	display: block;
+	z-index: 10;
+}
+
+ul.navBar li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+ul.navBar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 90%;
+	margin: 0;
+}
+
+ul.navBar li a:hover {
+	background-color: rgba(255,255,255,.25);
+}
+
+ul.navBar li a:active {
+	background-color: rgba(255,255,255,.5);
+}
+
+ul.navBar li a.current {
+	background-color: #fff;
+	color: blue;
+}
+
+:target::before {
+	content: "";
+	display: block;
+	height: 50px;
+	margin: -50px 0 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: #000;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
