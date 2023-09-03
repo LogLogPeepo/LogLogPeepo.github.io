@@ -6,24 +6,6 @@ body {
 	margin-left: 0;
 }
 
-.crustavo {
-	width: 128px;
-	height: 100px;
-}
-
-.crustavo:hover .crustavo2 {
-	display: none;
-}
-
-.crustavo .crustavo3 {
-	display: none;
-	margin-top: -8px;
-}
-
-.crustavo:hover .crustavo3 {
-	display: inline;
-}
-
 h1 {
 	font-size: 400%;
 }
