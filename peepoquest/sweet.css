@@ -102,7 +102,7 @@ ul.navBar li a:active {
 }
 
 ul.navBar li a.current {
-	background-color: #fff;
+	background-color: #fff9a9;
 	color: rgb(114, 86, 9);
 }
 
