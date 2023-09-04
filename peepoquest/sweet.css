@@ -1,14 +1,18 @@
 body {
 	background: #ff5151 url("assets/bg_sweets.png") repeat left top;
+	color: rgb(112, 0, 0);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	margin-left: 0;
+}
+
+.scrolling_bg {
+	background: #fff url("assets/bg_sweets.png") repeat left top;
 	animation: slide 6s linear infinite;
 	width: 200vw;
 	height: 200vh;
 	position: fixed;
 	z-index: -100;
-	color: rgb(112, 0, 0);
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size: 16px;
-	margin-left: 0;
 }
 
 @keyframes slide {
