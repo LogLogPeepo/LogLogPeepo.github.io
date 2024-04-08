@@ -6,41 +6,51 @@
     <h1>Page Not Found</h1>
     
     <br>
-    
-<div id="errorText">
-    </div>
-  <br>
-    
+	<div id="errorText">
+      </div>
+
+	<br>
+	
   <p>Return to the main page:</p>
   <div id="errorLink">
       </div>
 
     <script type="text/javascript" charset="utf-8">
       var texts = [
-          "seems like you arent too smart",
-          "thank you user, but this page is on another link",
-          "help me im trapped inside an error", 
-          "the website youre looking for is now a permanent guest at one of my 7 koopa hotels. i dare you to find it if you can",
-          "new best: 0%",
-          "bruh"
-	        "or maybe it was and im just not telling you"
-					"the results are in. you are NOT the page"
-					"i think, youre lost."
+        "seems like you arent too smart",
+        "thank you user, but this page is on another link",
+        "help me im trapped inside an error", 
+        "the website youre looking for is now a permanent guest at one of my 7 koopa hotels. i dare you to find it if you can",
+        "new best: 0%",
+        "bruh"
+	"or maybe it was and im just not telling you"
+	"the results are in. you are NOT the page"
+	"i think, youre lost."
       ];
       var buttons = [
-          "youre either a smart fella..."
-          "press b to start a new adventure"
-          "help me im trapped inside a button"
-        	"its a message, from browser!"
-          "tidal wave"
-					"bruh"
-					"but i wouldnt do that right?"
-					"backflip"
-					"home page from high school?"
+        "youre either a smart fella..."
+        "press b to start a new adventure"
+        "help me im trapped inside a button"
+        "its a message, from browser!"
+	"tidal wave"
+	"bruh"
+	"but i wouldnt do that right?"
+	"backflip"
+	"home page from high school?"
       ];
 
-      var pair = Math.ceil((Math.random()*texts.length-1))
-            document.getElementById("errorText").innerHTML = <h3>texts[pair]</h3>;
+	var pair = Math.floor(Math.random() * texts.length)
+
+	const text = doccument.getElementsById("errorText")[0]
+	const msg = doccument.createElement("h3")
+	msg.textContent = texts[pair]
+	text.append(msg)
+	const link = doccument.getElementById("errorLink")
+	const msg2 = doccument.createElement("button")
+	msg2.textContent = buttons[pair]
+	link.append(msg2)
+	    
+	    
             document.getElementById("errorLink").innerHTML = <button href="index.html">buttons[pair]</button>;
     </script> 
 </body>
