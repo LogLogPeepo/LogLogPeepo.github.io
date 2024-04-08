@@ -2,7 +2,20 @@
 <head>
     <title>index</title>
 </head>
+
 <body>
-    im not actually making an index page<br>
-    i accidentally deleted the last one
+    <div id="myRandomDiv">
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        var texts = [
+            "hello",
+            "testing",
+            "random", 
+            "something",
+            "anything",
+        ];
+            document.getElementById("myRandomDiv").innerHTML = texts[Math.ceil((Math.random()*texts.length-1))];;
+    </script> 
+    
 </body>
