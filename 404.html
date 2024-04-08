@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Page Not Found</title>
+</head>
+<body>
+    <t1>Page Not Found</t1>
+    
+    <br>
+    
+<t3><div id="errorText">
+    </div></t3>
+  <br>
+    
+  <p>Return to the main page:</p>
+  <button href="index.html"><div id="errorLink">
+      </div></button>
+
+    <script type="text/javascript" charset="utf-8">
+      var texts = [
+          "seems like you arent too smart",
+          "thank you user, but this page is on another link",
+          "help me im trapped inside an error", 
+          "the website youre looking for is now a permanent guest at one of my 7 koopa hotels. i dare you to find it if you can",
+          "new best: 0%",
+          "bruh"
+		  		"or maybe it was and im just not telling you"
+					"the results are in. you are NOT the page"
+      ];
+      var buttons = [
+          "youre either a smart fella..."
+          "press b to start a new adventure"
+          "help me im trapped inside a link"
+          "its a link, from bowser"
+          "tidal wave"
+          "bruh"
+					"but i wouldnt do that right?"
+					"backflip"
+      ];
+
+      var pair = Math.ceil((Math.random()*texts.length-1))
+            document.getElementById("errorText").innerHTML = texts[pair];;
+            document.getElementById("errorLink").innerHTML = buttons[pair];;
+    </script> 
+</body>
