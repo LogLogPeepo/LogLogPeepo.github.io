@@ -7,13 +7,13 @@
     
     <br>
     
-<h3><div id="errorText">
-    </div></h3>
+<div id="errorText">
+    </div>
   <br>
     
   <p>Return to the main page:</p>
-  <button href="index.html"><div id="errorLink">
-      </div></button>
+  <div id="errorLink">
+      </div>
 
     <script type="text/javascript" charset="utf-8">
       var texts = [
@@ -25,20 +25,22 @@
           "bruh"
 	        "or maybe it was and im just not telling you"
 					"the results are in. you are NOT the page"
+					"i think, youre lost."
       ];
       var buttons = [
           "youre either a smart fella..."
           "press b to start a new adventure"
-          "help me im trapped inside a link"
-          "its a link, from bowser"
+          "help me im trapped inside a button"
+        	"its a message, from browser!"
           "tidal wave"
-          "bruh"
+					"bruh"
 					"but i wouldnt do that right?"
 					"backflip"
+					"home page from high school?"
       ];
 
       var pair = Math.ceil((Math.random()*texts.length-1))
-            document.getElementById("errorText").innerHTML = texts[pair];
-            document.getElementById("errorLink").innerHTML = buttons[pair];
+            document.getElementById("errorText").innerHTML = <h3>texts[pair]</h3>;
+            document.getElementById("errorLink").innerHTML = <button href="index.html">buttons[pair]</button>;
     </script> 
 </body>
