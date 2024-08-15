@@ -1,7 +1,8 @@
-var realConsoleLog = console.log;
-console.log = function () {
-    var message = [].join.call(arguments, " ");
-    // Display the message somewhere... (jQuery example)
-    $(".output").text(message);
-    realConsoleLog.apply(console, arguments);
-};
+			$(function(){
+				html = {
+					panel: $("#console"),
+					log: function(m) {
+						this.panel.append("<div>&gt; "+m+"</div>");
+					}
+				};
+			});		
