@@ -16,6 +16,16 @@
 				overflow: auto;
 			}
 </style>
+<script src="Debug/jquery-3.7.1.min.js"></script>
+	<script>$(function(){
+				html = {
+					panel: $("#console"),
+					log: function(m) {
+						this.panel.append("<div>&gt; "+m+"</div>");
+					}
+				};
+			});		
+</script>
 </head>
 <body style="text-align: center">
 <p>Error: login failed</p>
@@ -101,15 +111,7 @@
 
 <input type='text' id='foo'><div onclick='$("#foo").focus();'>click</div>
 	<canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #231F20"></canvas>
-    	<script src="Debug/jquery-3.7.1.min.js"></script>
-	<script>var realConsoleLog = console.log;
-console.log = function () {
-    var message = [].join.call(arguments, " ");
-    // Display the message somewhere... (jQuery example)
-    $(".output").text(message);
-    realConsoleLog.apply(console, arguments);
-};
-</script>
+    	
 <div id="console"></div>
     <script src="Build/MarioVsLuigi-WebGL.loader.js"></script>
     <script>
